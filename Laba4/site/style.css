@@ -1,0 +1,21 @@
+body {
+    background-color: #ffb700;
+}
+
+.zag{
+
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+ .aa{
+     color: red;
+     text-decoration: underline;
+     font-size: 18px;
+ }
+ .text{
+     text-indent: 40px;
+     color: green;
+
+ }

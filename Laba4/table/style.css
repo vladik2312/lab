@@ -1,0 +1,33 @@
+
+table {
+
+    border-collapse: collapse;
+    width: 700px;
+
+    margin: 20px;
+    color: white;
+}
+
+
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.purp{
+    background: purple;
+}
+.dblue{
+    background: darkblue;
+}
+.blue{
+    background: blue;
+}
+.small{
+    width: 50px;
+}
+.grey{
+    background: grey;
+}
