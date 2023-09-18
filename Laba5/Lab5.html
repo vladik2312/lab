@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація та Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Авторизація та Реєстрація</h1>
+    <div class="form-container">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'login')">Авторизація</button>
+            <button class="tablinks" onclick="openTab(event, 'register')">Реєстрація</button>
+        </div>
+
+        <!-- Форма авторизації -->
+        <div id="login" class="tabcontent">
+            <form action="login.php" method="post">
+                <label for="login-username">Логін:</label>
+                <input type="text" id="login-username" name="login-username" required>
+
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+
+        <!-- Форма реєстрації -->
+        <div id="register" class="tabcontent">
+            <form action="register.php" method="post">
+                <label for="register-username">Логін:</label>
+                <input type="text" id="register-username" name="register-username" required>
+
+                <label for="register-email">Електронна пошта:</label>
+                <input type="email" id="register-email" name="register-email" required>
+
+                <label for="register-password">Пароль:</label>
+                <input type="password" id="register-password" name="register-password" required>
+
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
